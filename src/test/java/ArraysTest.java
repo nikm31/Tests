@@ -36,14 +36,14 @@ public class ArraysTest {
 
     @ParameterizedTest
     @MethodSource("dataForArray")
-    @DisplayName("DZ #2")
+    @DisplayName("DZ 2")
     void testArray(int[] testArr, int[] expected) {
         Assert.assertArrayEquals(expected, mainApp.afterLastFourArray(testArr));
     }
 
     @ParameterizedTest
     @MethodSource("dataForArray2")
-    @DisplayName("DZ #3")
+    @DisplayName("DZ 3")
     void testArray6(int[] testArr) {
         Assertions.assertTrue(mainApp.isOneOrFourInArray(testArr));
     }
